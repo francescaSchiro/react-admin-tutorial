@@ -25,13 +25,36 @@ export const MyLaunchIcon = styled(LaunchIcon)`
 `;
 ```
 
-- **installed Roboto** in index.html  
+- **installed Roboto** in *index.html*
 ```html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 ```
 
  > take a look also at (react-emotion)[https://emotion.sh/docs/install].
 
-- 
+- Inside **react-admin folder**: 
+  - > `git init`
+  - > `git remote -v` // tells you if your git local repository is linked to any remote one. In this case not yet.
+  - > `git status` // all files red unstaged for the commit
+  - > `git add -A` // stage files before commit
+  - > `git commit -m "first commit"` // commit in local git
+On **GitHub**: 
+  - create a new Repository;
+  - > `git remote add origin https://github.com/francescaSchiro/react-admin-tutorial.git` // link my local repo to remote repo;
+  - > `git push -u origin master` // push all my locally committed files to the remote repository on GitHub in the master branch.
+  - > `git checkout -b develop` // creates branch develop LOCALLY
+  - > `git branch -a` // shows the local and remote branches.( see that develop is just in local and not remote) 
+  - > `git push -u origin develop` // pushes this branch also on remote. with all the present files in master at this stage.
+{ Situazione stabile:
+
+- Push su develop.
+-Spostata su master(git checkout master)
+merge di develop su master (git merge devlop)
+Push su master di develop (git push)
+torno su develop(git checkout develop).
+
+}
+
+  
 
 
